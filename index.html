@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Hunt</title>
+    <link rel="icon"
+        href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.kindpng.com%2Fpicc%2Fm%2F31-315292_one-piece-straw-hat-png-transparent-png.png&imgrefurl=https%3A%2F%2Fwww.kindpng.com%2Fimgv%2FhTbwiJ_one-piece-straw-hat-png-transparent-png%2F&tbnid=1A3_cmWg386QEM&vet=12ahUKEwjLqIP884L0AhXyATQIHUo8AC4QMygBegUIARDDAg..i&docid=GQIWPbScDo60LM&w=860&h=403&q=one%20piece%20hat&ved=2ahUKEwjLqIP884L0AhXyATQIHUo8AC4QMygBegUIARDDAg">
+    <script type="text/javascript" src="treasure-hunt.js"></script>
+    <link rel="stylesheet" href="treasure-hunt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="image-background">
+        <h1>Pirate's Booty</h1>
+    </div>
+
+
+    <div id="instructions">
+        <h3>Welcome treasure hunters</h3>
+        <p>Ahoy there matey, comin' for me gold? </p>
+
+
+        <ul>
+            <li>Click the boxes to reveal what's on the map.</li>
+            <li>If you click on the bomb, you DIE!</li>
+            <li>If you click on the treasure, you win!</li>
+        </ul>
+    </div>
+
+
+    <img id="picture-of-treasure"
+        src="https://static.wikia.nocookie.net/blackclover/images/5/50/Treasures_of_the_dungeon.png/revision/latest?cb=20180206195156"
+        alt="Treasure Vault" height="300px">
+
+
+    <h3 id="track-record"> You have this number of attempts left: <span onClick="counter" id="counter">8</span></h3>
+    <table id="table">
+        <tr class="cell-box">
+            <td onclick="treasure(0)" id=0>?</td>
+            <td onclick="treasure(1)" id=1>?</td>
+            <td onclick="treasure(2)" id=2>?</td>
+        </tr>
+        <tr class="cell-box">
+            <td onclick="treasure(3)" id=3>?</td>
+            <td onclick="treasure(4)" id=4>?</td>
+            <td onclick="treasure(5)" id=5>?</td>
+        </tr>
+        <tr class="cell-box">
+            <td onclick="treasure(6)" id=6>?</td>
+            <td onclick="treasure(7)" id=7>?</td>
+            <td onclick="treasure(8)" id=8>?</td>
+        </tr>
+    </table>
+
+    <div id="reset-btn">
+        <button id="reset-button" type="button" onClick="location.reload()">Try Again</button>
+    </div>
+
+    <footer>Raymond Schroeder Salvador Tena
+        <a href="https://www.amazon.com/Skeleteen-Tri-Corner-Pirate-Hat/dp/B07GT558RR/ref=sr_1_8?crid=3C87IAZPV4NOO&keywords=pirate+hat&qid=1636172517&qsid=136-2336199-0628312&sprefix=pirate+ha%2Caps%2C141&sr=8-8&sres=B07Q86WD5Q%2CB07S2H59QY%2CB07CH91Y7B%2CB07GT558RR%2CB07PW3WRL9%2CB088YF2VBC%2CB08C7HJH59%2CB00O18PMTQ%2CB0091K9PO2%2CB003DWM1SG%2CB00UKHZ17K%2CB000V6X6I6%2CB00QQQSASQ%2CB07L5L4NFX%2CB00I86EVXK%2CB077MHGFX4%2CB07BB9MCT9%2CB0748W93GL%2CB0058DQ2PG%2CB08CKC7VHB&srpt=COSTUME_HEADWEAR"
+            target="_blank">Pirate Hat Merch</a>
+    </footer>
+
+</body>
+
+
+</html>
